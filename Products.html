@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Products</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+    <body>
+        
+        <section class="i-header">
+           <nav>
+            <a href="index.html"><img src="images/logo.jpeg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidenMenu()"></i>
+                <ul>
+                     <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="Products.html">Explore</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+             <i class="fa fa-bars" onclick="showMenu()"></i>
+           </nav>
+            <div class="i-text-box">
+                <h1>Instruments</h1>
+            </div>
+        </section>
+        <!---------------------------products list------------------>
+        
+        
+        
+        <!---------guitars------------->
+        <section class="i">
+            <h5>Guitars</h5>
+            <div class="i-p">
+                <p>If you are looking for a Best guitar shop in Bangalore then why not head to Music House.<br>At Music house, we have huge collection of Electric, Acoustic bass guitars and Classical Guitars from top Brands like Fender, Gibson, Epiphone, Taylor, Pluto all at Best Prices Guaranteed. Whether you are a beginner who wants to play guitar for fun or a professional looking for a dream guitar, your hunt for dealers is over!. Our experienced sales staff will help you find the perfect instrument for you</p>
+            </div>
+            <div class="i-g-row">
+                <div class="g-row1">
+                    <p>Acoustic Guitars</p>
+                    <div class="g-row">
+                        <div class="g-col">
+                          <img src="images/ag1.jpeg">
+                       </div>
+                       <div class="g-col">
+                         <img src="images/ag2.jpg">
+                       </div>
+                       <div class="g-col">
+                          <img src="images/ag3.jpg">
+                       </div>
+                    </div>
+                </div>
+                <div class="g-row1">
+                    <p>Electric Guitars</p>
+                    <div class="g-row">
+                    <div class="g-col">
+                        <img src="images/eg.jpg">
+                     </div>
+                     <div class="g-col">
+                        <img src="images/eg2.jpg">
+                     </div>
+                     <div class="g-col">
+                        <img src="images/eg3.jpg">
+                     </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+            <!------------keyboards---------->
+            <h5>Keyboard Instrument</h5>
+            <div class="i-p">
+                <p>At Music House, we celebrate the enchanting world of keyboards, where melodies and harmonies come to life with the press of a key. Whether you're an aspiring pianist, a keyboard wizard, or just beginning your musical journey, we have the perfect keyboard for you.
+                </p>   
+            </div>
+            <div class="i-k-row1">
+                <div class="k-col">
+                    <p>Keyboard</p>
+                    <img src="images/electronic.jpg">
+                </div>
+                <div class="k-col">
+                    <p>Melodica</p>
+                    <img src="images/melodica.jpg">
+                </div>
+                <div class="k-col">
+                    <p>Piano</p>
+                    <img src="images/piano.jpg">
+                </div>
+                <div class="k-col">
+                    <p>Harmonium</p>
+                    <img src="images/harmonium.jpg">
+                </div>
+            </div>
+            
+            
+            
+            <!------------Drums---------->
+            <h5>Drums</h5>
+            <div class="i-p">
+                <p>At Music House, we have a deep appreciation for the rhythmic heartbeat of music, and what better instrument represents that pulse than drums? Our selection of drums is designed to cater to drummers of all levels, from beginners to seasoned pros
+                </p>   
+            </div>
+            <div class="i-d-row1">
+                <div class="d-col">
+                    <p>Electric Drums</p>
+                    <img src="images/electric%20drum.jpeg">
+                </div>
+                <div class="d-col">
+                    <p>Hand Drums</p>
+                    <img src="images/hand%20drum.jpg">
+                </div>
+                <div class="d-col">
+                    <p>Acoustic Drums</p>
+                    <img src="images/acoustic%20drum.jpg">
+                </div>
+            </div>
+        
+            <div class="i-p">
+                <p>To know more about brands and prices visite our store.<br>Our store details are available in contacts page.
+                </p>   
+            </div>
+        </section>
+       
+        <!-----------------------contact us------------------->
+        <section class="contact">
+            <h4>Contact us</h4>
+            <p> Do you have any questions or concerns?<br>
+               Please Email us at info@themusichouse.com<br>
+                          or<br>
+              contact us toll free at 888-88G-CLEF (888-884-2533).<br>
+                <br>
+             We appreciate your patronage.<br><br>
+
+                ©Copyright 1997-2026 THEMUSICHOUSE.COM, INC. All Rights Reserved</p>
+        </section>
+        
+        <!---------menu java script----------------------->
+        <script>
+            var navlinks = document.getElementById("navLinks");
+            function showMenu(){
+                navlinks.style.right = "0";
+            }
+            function hidenMenu(){
+                navlinks.style.right = "-200px";
+            }
+        </script>
+   </body>
+</html>

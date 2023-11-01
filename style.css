@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    
+    position: relative;
+}
+nav{
+    display: flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 140px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:black;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 100%;
+    color: aliceblue;
+    position: absolute;
+    text-align: left;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 20px;
+}
+.text-box h1{
+    padding-top: 180px;
+    font-size: 50px;
+}
+.text-box p{
+    margin: 15px 0 40px;
+    padding-bottom: 160px;   
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .text-box h1{
+    padding-top: 80px;
+    font-size: 24px;
+    padding-right: 20px;
+}
+    .text-box p{
+    margin: 15px 0 40px;
+    padding-bottom: 40px;
+    padding-top: 30px; 
+    padding-right: 20px;
+}
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background: white;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav .fa{
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 20px;
+    }
+}
+/*-------products and services---------*/
+.pands{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+}
+h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.pands-row{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.col-1{
+    flex-basis: 31%;
+    background: #fff3f9;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h2{
+    margin: 10px 0;
+}
+.col-1:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+    .pands-row{
+        flex-direction: column;
+    }
+}
+/*-----------------branch-------------*/
+.branch{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+}
+.b-row{
+    margin: 5%;
+    display: flex;
+}
+.b-c{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow:hidden;
+}
+.b-c image{
+    width: 100%;
+    display: block;
+}
+
+.h3{
+    width: 100%;
+    font-weight: 500;
+    color: aliceblue;
+    font-size: 26px;
+    bottom: 50%;
+    left: 50%;
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+    text-align: center;
+}
+h3:hover{
+    bottom: 49%;
+    opacity: 1;
+}
+
+@media(max-width:700px){
+    .b-row{
+        flex-direction: column;
+    }
+}
+
+/*---------------querry---------------*/
+.querry{
+    text-align: center;
+}
+.q-row p{
+    font-size: 36px;
+}
+button{
+    height: 40px;
+    width: 130px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border-radius: 5px;
+    border-width: 1px;
+    font-size: 20px;
+}
+button:hover{
+    background: black;
+    color: aliceblue;
+}
+.q-row textarea,.q-row input{
+    width: 60%;
+    padding: 20px;
+    margin-bottom: 17px;
+    background: #F5F5F5;
+    
+}
+/*------------contact us------>*/
+.contact{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 60px;
+    color: black;
+    background:azure ;
+    padding-bottom: 40px;
+}
+h4{
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+}
+/*----------------------------------ABOUT US---------------------------------*/
+.a-header{
+    min-height: 80vh;
+    width: 100%;
+    position: relative;
+}
+.a-text-box{
+    width: 100%;
+    color: aliceblue;
+    position: absolute;
+    text-align: left;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/about.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 20px;
+}
+.a-text-box h1{
+    padding-top: 120px;
+    font-size: 50px;
+    padding-bottom: 120px;
+    padding-left: 80px;
+}
+.a-content{
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 120px;
+}
+h6{
+    font-size: 22px;
+}
+/*---------------------------------Instruments---------------------------------*/
+.i-header{
+    min-height: 80vh;
+    width: 100%;
+    position: relative;
+}
+.i-text-box{
+    width: 100%;
+    color: aliceblue;
+    position: absolute;
+    text-align: left;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/instruments.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 20px;
+}
+.i-text-box h1{
+    padding-top: 120px;
+    font-size: 50px;
+    padding-bottom: 120px;
+    padding-left: 80px;
+}
+.i-p{
+   text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 120px;
+}
+h5{
+    font-size: 32px;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+.g-row{
+    display: flex;
+}
+.g-col{
+     position: relative;
+    flex-basis: 31%;
+    padding-left: 120px;
+    padding-bottom: 30px;
+}
+.g-row1{
+    padding-left: 60px;
+}
+.i-k-row1{
+    display: flex;
+}
+.k-col{
+    position: relative;
+    flex-basis: 25%;
+    padding-left: 60px;
+    padding-bottom: 30px;
+}
+.i-d-row1{
+    display: flex;
+}
+.d-col{
+     position: relative;
+    flex-basis: 31%;
+    padding-left: 120px;
+    padding-bottom: 30px;
+}
+
+
+@media(max-width: 700px){
+    .i-k-row1{
+        flex-direction: column;
+    }
+    .i-d-row1{
+        flex-direction: column;
+    }
+    .g-row{
+        flex-direction: column;        
+    }
+    .d-col{
+        padding-left: 60px;
+    }
+    .i-text-box h1{
+        font-size: 42px;
+    }
+}
+
+
+
+
+/*---------------------------------------contact Us-------------------------------------*/
+.c-header{
+    min-height: 80vh;
+    width: 100%;
+    position: relative;
+}
+.c-text-box{
+    width: 100%;
+    color: aliceblue;
+    position: absolute;
+    text-align: left;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 20px;
+}
+.c-text-box p{
+    margin: 15px 0 40px;
+    padding-bottom: 80px;  
+    padding-left: 30px;
+}
+.c-text-box h1{
+    padding-top: 100px;
+    font-size: 50px;
+}
+.location{
+    text-align: left;
+    font-size: 22px;
+    width: 90%;
+}
+.location p{
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+.iframe{
+    width: 100%;
+}
+.c-row{
+    display: flex;
+}
+.c-col1{
+    flex-basis: 44%;
+    position: relative;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+.c-col2{
+    flex-basis: 44%;
+    position: relative;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+.c-col2 p{
+    padding-top: 55px;
+    font-size: 18px;
+}
+
+
+@media(max-width: 700px){
+    .c-row{
+         flex-direction: column;
+    }
+    .c-col2 p{
+    padding-top: 5px;
+    font-size: 18px;
+    }
+    .location{
+        width: 90%;
+        
+    }
+    .location iframe{
+        width: 100%;
+    }
+    
+}

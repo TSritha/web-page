@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+    <body>
+        
+        <section class="header">
+           <nav>
+            <a href="index.html"><img src="images/logo.jpeg" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidenMenu()"></i>
+                <ul>
+                     <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="Products.html">Explore</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+             <i class="fa fa-bars" onclick="showMenu()"></i>
+           </nav>
+            <div class="text-box">
+                <h1>Discover the Best Musical Instruments</h1>
+                <p>We are A MUSICAL STORE with an extraordinary inventory filled with musical treasures to delight all music<br> lovers, musicians and their children and our goal is to provide you with caring service.<br>Music House is a supermarket with house full of Musical Instruments based in Bangalore. It’s a place with<br>Perfect range of Indian and western instruments. It covers all the gamut of Music like guitars, violins,<br> drums, Keyboards, all types of musical accessories & amplifiers</p>
+            </div>
+        </section>
+        
+        <!---------------products and services-------------------->
+        
+        <section class="pands">
+            <h1>Our Products and Services</h1>
+            <p>Music House is a supermarket with house full of Musical Instruments based in Bangalore</p>
+            <div class="pands-row">
+                <div class="col-1">
+                    <h2>Instruments</h2>
+                    <p>Guitars<br>Violins<br>Keyboards<br>Sitars<br>Harmoniums<br>Drums</p>
+                </div>
+                <div class="col-1">
+                    <h2>Accecories</h2>
+                    <p>Instrument Bags<br>Amplifiers<br>Keyboard Stands<br>percussions</p>
+                </div>
+                <div class="col-1">
+                    <h2>Services</h2>
+                    <p>For any kind of<br> repairs and damages <br>or breakeges visit our store</p>
+                </div>
+            </div>
+            <p>Click on Explore to see the instruments available</p>
+        </section>
+        <!----------------branches---------------------------->
+        <section class="branch">
+            <h1>Our Branches</h1>
+            <p>Music House is a supermarket with house full of Musical Instruments based in Bangalore</p>
+            <div class="b-row">
+                <div class="b-c">
+                    <a href="contact.html"><img src="images/jayanagar.jpeg" alt="Description of image" width="300" height="300"></a>
+                    <div class="layer">
+                        <h3>JAYANAGAR</h3>
+                    </div>
+                </div>
+                <div class="b-c">
+                    <a href="contact.html"><img src="images/bri%20road.jpg" alt="Description of image" width="300" height="300"></a>
+                    <div class="layer">
+                        <h3>BRIGADE ROAD</h3>
+                    </div>
+                </div>
+                <div class="b-c">
+                    <a href="contact.html"><img src="images/hsr.jpg" alt="Description of image" width="300" height="300"></a>
+                    <div class="layer">
+                        <h3>HSR LAYOUT</h3>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+        <!------------------------query form------------------->
+        <section class="querry">
+            <div class="q-row">
+                <p>Any Qurries</p>
+                <form action="">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="text" placeholder="Enter Email Adress " required>
+                    <textarea rows="8" placeholder="what's your querry"></textarea><br>
+                    <button type="submit">SUBMIT</button>
+                </form>
+            </div>
+        </section>
+        
+        <!-----------------------contact us------------------->
+        <section class="contact">
+            <h4>Contact us</h4>
+            <p> Do you have any questions or concerns?<br>
+               Please Email us at info@themusichouse.com<br>
+                          or<br>
+              contact us toll free at 888-88G-CLEF (888-884-2533).<br>
+                <br>
+             We appreciate your patronage.<br><br>
+
+                ©Copyright 1997-2026 THEMUSICHOUSE.COM, INC. All Rights Reserved</p>
+        </section>
+        
+        <!---------menu java script----------------------->
+        <script>
+            var navlinks = document.getElementById("navLinks");
+            function showMenu(){
+                navlinks.style.right = "0";
+            }
+            function hidenMenu(){
+                navlinks.style.right = "-200px";
+            }
+        </script>
+   </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    </head>
+    <body>
+        
+        <section class="a-header">
+           <nav>
+            <a href="index.html"><img src="images/logo.jpeg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidenMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="Products.html">Explore</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+             <i class="fa fa-bars" onclick="showMenu()"></i>
+           </nav>
+            <div class="a-text-box">
+                <h1>About us</h1>     
+            </div>
+        </section>
+        <!----------------------------content-------------------------->
+        <section class="a-content">
+            <div class="a-p">
+                <p>
+                Welcome to Music House, where the love of music meets the art of harmony. We are more than just a musical store; we're your destination for inspiration, education, and the tools to turn your musical dreams into reality.<br>At Music House, we breathe, live, and celebrate music in all its forms. Our journey began with a simple desire to share our passion for music with the world. This passion drives us to provide you with the finest musical instruments, accessories, and expert guidance to nurture your love for music.<br><br>Founded in 1984, Music House has been a cornerstone of the musical community in Bangalore for 39 years. Our story is one of dedication to the craft, commitment to our customers, and an unyielding belief in the power of music to enrich lives. We started as a small shop with big dreams, and today, we've grown into a hub for musicians of all backgrounds and abilities.<br>Our mission is simple: to make music accessible to all. Whether you're a seasoned musician or a novice, we aim to provide the instruments, knowledge, and support you need to thrive in your musical journey. We believe that music transcends boundaries and brings people together, and we're here to help you become a part of that beautiful harmony.<br><br><h6>WHY CHOOSE MUSIC HOUSE</h6><br>Expertise: Our team of experienced musicians and music enthusiasts is dedicated to helping you find the right instruments, equipment, and advice to meet your musical aspirations.<br>Quality: We are committed to offering top-quality musical instruments, accessories, and services, ensuring you have access to the best tools for your artistic expression.<br>Community: We value the connections we've made with our customers over the years and strive to create a welcoming community for all musicians to share their love of music.
+                </p>
+            </div>
+        </section>
+        <!-----------------------contact us------------------->
+        <section class="contact">
+            <h4>Contact us</h4>
+            <p> Do you have any questions or concerns?<br>
+               Please Email us at info@themusichouse.com<br>
+                          or<br>
+              contact us toll free at 888-88G-CLEF (888-884-2533).<br>
+                <br>
+             We appreciate your patronage.<br><br>
+
+                ©Copyright 1997-2026 THEMUSICHOUSE.COM, INC. All Rights Reserved</p>
+        </section>
+        
+        <!---------menu java script----------------------->
+        <script>
+            var navlinks = document.getElementById("navLinks");
+            function showMenu(){
+                navlinks.style.right = "0";
+            }
+            function hidenMenu(){
+                navlinks.style.right = "-200px";
+            }
+        </script>
+   </body>
+</html>
